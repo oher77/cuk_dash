@@ -305,3 +305,11 @@ def get_global_trend_figure():
 # 앱 실행
 if __name__ == '__main__':
     app.run(debug=True)
+
+# App Engine을 위한 서버 변수 정의
+server = app.server
+
+# Waitress를 사용한 로컬 테스트용 코드 (선택 사항)
+# 아래 코드는 로컬에서 waitress로 실행할 때만 사용합니다.
+#from waitress import serve
+#serve(app.server, host='0.0.0.0', port=8080)
