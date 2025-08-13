@@ -113,33 +113,45 @@ h1,h2,h3,h4{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .kpi-title {
     font-size: 16px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+}
+
+.ranking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.ranking-label {
+    margin-right: 5px;
 }
 
 /* KPI 숫자와 증감 숫자를 감싸는 컨테이너 - 가로 정렬 */
 .kpi-value-container {
     display: flex; /* flexbox로 설정 */
-    align-items: flex-end; /* 수직 하단 정렬 */
-    margin-top: 5px;
-    margin-bottom: 25px;
+    /*align-items: flex-end;  수직 하단 정렬 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 15px;
 }
 .kpi-value {
-    font-size: 72px;
+    font-size: 48px;
     font-weight: 200;
-    margin-top: 20px;
-    margin-bottom: 0;
     line-height: 1;
+}
+.kpi-value.global {
+    font-size: 32px;
+}
+.kpi-na {
+  color: #aaa!important;
+  font-size: 20px;
 }
 .kpi-change {
     display: flex;
     align-items: center;
     font-size: 14px;
-    margin-left: 10px; /* KPI 숫자와의 간격 추가 */
-    margin-bottom: 7px; /* KPI 숫자와 수직 정렬을 위해 마진 조정 */
 }
